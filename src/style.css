@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: var(--background-color);
   color: #e8e8e8;
   font-family: "Roboto", sans-serif;
 }
@@ -16,7 +17,6 @@ h1 {
 }
 
 .hero {
-  background-color: var(--background-color);
   text-align: center;
   padding: 160px 20px;
 }
