@@ -4,6 +4,13 @@
   --font-color: #e8e8e8;
 }
 
+@media (max-width: 900px) {
+  .description-box {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 body {
   background-color: var(--background-color);
   color: #e8e8e8;
@@ -16,9 +23,24 @@ h1 {
   letter-spacing: 5.4px;
 }
 
+h2 {
+  font-size: 54px;
+}
+
+h6{
+  color: #fffcc7;
+  
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .hero {
   text-align: center;
-  padding: 160px 20px;
+  padding: 140px 20px;
 }
 
 .hero h2 {
@@ -38,9 +60,29 @@ h1 {
   border-radius: 30px;
   color: var(--font-color);
   font-size: 16px;
-  gap: 10px;
   letter-spacing: 1.3px;
   line-height: 27px;
-  padding: 18px 20px;
-  width: 140px;
+  padding: 18px 25px;
+  width: 170px;
+}
+
+.btn-launchButton {
+  background: var(--branding-color);
+  border-radius: 30px;
+  color: var(--font-color);
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  padding: 18px 25px;
+  width: 200px;
+}
+
+.intro-text {
+  margin-bottom: 100px !important;
+}
+.projectDisplay h2 {
+  font-size: 36px;
+}
+
+.weather-pic{
+  margin-left: 10px;
 }
