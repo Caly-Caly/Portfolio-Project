@@ -1,7 +1,10 @@
 :root {
+  --accent-color: #fffcc7;
   --background-color: #1b1b1b;
-  --branding-color: #800020;
+  --branding-color: #970026;
   --font-color: #e8e8e8;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Inter", sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -9,27 +12,28 @@
     padding: 0;
     text-align: center;
   }
+  .about-section {
+    text-align: center;
+    padding: 0;
+
+  }
 }
 
 body {
   background-color: var(--background-color);
   color: #e8e8e8;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
 }
 
 h1 {
+  font-style: italic;
   font-size: 86px;
   font-weight: bold;
-  letter-spacing: 5.4px;
+
 }
 
 h2 {
   font-size: 54px;
-}
-
-h6{
-  color: #fffcc7;
-  
 }
 
 p {
@@ -37,13 +41,70 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
+.about-section {
+  padding: 150px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+}
+
+.about-section h3 {
+  color: var(--accent-color)
+}
+
+.about-section h4 {
+  color: var(--branding-color);
+  font-weight: 700;
+}
+
+.about-section p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-section h3 {
+  font-size: 18px;
+}
+
+.about-section-details{
+  margin: 15px;
+}
+
+.description-box h6 {
+  color: var(--accent-color);
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 30px;
+  color: var(--font-color);
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  line-height: 27px;
+  padding: 18px 25px;
+  
+}
+
+.btn-launchButton {
+  background: var(--branding-color);
+  border-radius: 30px;
+  color: var(--font-color);
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  padding: 18px 25px;
+  width: 150px;
+}
 
 .hero {
   text-align: center;
-  padding: 140px 20px;
+  padding: 150px 20px;
 }
 
+
 .hero h2 {
+  font-family: var(--secondary-font);
   font-size: 28px;
   font-weight: normal;
   line-height: 2;
@@ -55,35 +116,15 @@ p {
   margin: 0;
 }
 
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 30px;
-  color: var(--font-color);
-  font-size: 16px;
-  letter-spacing: 1.3px;
-  line-height: 27px;
-  padding: 18px 25px;
-  width: 170px;
-}
-
-.btn-launchButton {
-  background: var(--branding-color);
-  border-radius: 30px;
-  color: var(--font-color);
-  font-size: 16px;
-  letter-spacing: 1.3px;
-  padding: 18px 25px;
-  width: 200px;
-}
-
 .intro-text {
+  font-family: var(--secondary-font);
   font-style: italic;
   margin-bottom: 100px !important;
 }
-.projectDisplay h2 {
+.projectTitles {
   font-size: 36px;
 }
 
-.weather-pic{
+.weather-pic {
   margin-left: 10px;
 }
