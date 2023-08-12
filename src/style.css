@@ -1,7 +1,7 @@
 :root {
-  --accent-color: #fffcc7;
+  --accent-color: #e4e4c0;
   --background-color: #1b1b1b;
-  --branding-color: #a7002a;
+  --branding-color: #950025;
   --font-color: #e8e8e8;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Noto Sans", sans-serif;
@@ -20,7 +20,7 @@
 
 body {
   background-color: var(--background-color);
-  color: #e8e8e8;
+  color: var(--font-color);
   font-family: var(--primary-font);
 }
 
@@ -33,6 +33,10 @@ p {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+}
+
+.accent-color {
+  color: var(--accent-color);
 }
 
 .btn-branding {
@@ -55,11 +59,12 @@ p {
   width: 150px;
 }
 
+.content-container {
+  padding: 150px 40px;
+}
+
 .content {
   margin: 15px;
-}
-.content-container {
-  padding: 150px 20px;
 }
 
 .content h1 {
@@ -68,6 +73,7 @@ p {
 }
 
 .content h3 {
+  color: var(--branding-color);
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
@@ -85,7 +91,6 @@ p {
 
 .description-box h6 {
   color: var(--accent-color);
-  
 }
 
 .hero {
@@ -124,10 +129,11 @@ p {
   letter-spacing: 4.4px;
 }
 
-.title{
-  color: var(--branding-color);
-}
-
 .weather-pic {
   margin-left: 10px;
+}
+
+a {
+  color: #bfc0c0;
+  text-decoration: none;
 }
