@@ -1,10 +1,10 @@
 :root {
   --accent-color: #fffcc7;
   --background-color: #1b1b1b;
-  --branding-color: #970026;
+  --branding-color: #a7002a;
   --font-color: #e8e8e8;
   --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Inter", sans-serif;
+  --secondary-font: "Noto Sans", sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -12,10 +12,9 @@
     padding: 0;
     text-align: center;
   }
-  .about-section {
+  .content {
     text-align: center;
     padding: 0;
-
   }
 }
 
@@ -25,55 +24,15 @@ body {
   font-family: var(--primary-font);
 }
 
-h1 {
-  font-style: italic;
-  font-size: 86px;
-  font-weight: bold;
-
-}
-
 h2 {
   font-size: 54px;
+  font-weight: 800;
 }
 
 p {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-}
-.about-section {
-  padding: 150px 20px;
-}
-
-.about-section h1 {
-  font-size: 64px;
-}
-
-.about-section h3 {
-  color: var(--accent-color)
-}
-
-.about-section h4 {
-  color: var(--branding-color);
-  font-weight: 700;
-}
-
-.about-section p {
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.about-section h3 {
-  font-size: 18px;
-}
-
-.about-section-details{
-  margin: 15px;
-}
-
-.description-box h6 {
-  color: var(--accent-color);
 }
 
 .btn-branding {
@@ -84,7 +43,6 @@ p {
   letter-spacing: 1.3px;
   line-height: 27px;
   padding: 18px 25px;
-  
 }
 
 .btn-launchButton {
@@ -97,11 +55,50 @@ p {
   width: 150px;
 }
 
+.content {
+  margin: 15px;
+}
+.content-container {
+  padding: 150px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  letter-spacing: 4.4px;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.content h4 {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.content p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.description-box h6 {
+  color: var(--accent-color);
+  
+}
+
 .hero {
   text-align: center;
   padding: 150px 20px;
 }
 
+.hero h1 {
+  font-style: italic;
+  font-size: 86px;
+  font-weight: bold;
+  letter-spacing: 5.4px;
+}
 
 .hero h2 {
   font-family: var(--secondary-font);
@@ -121,8 +118,14 @@ p {
   font-style: italic;
   margin-bottom: 100px !important;
 }
-.projectTitles {
+.project-titles {
   font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 4.4px;
+}
+
+.title{
+  color: var(--branding-color);
 }
 
 .weather-pic {
