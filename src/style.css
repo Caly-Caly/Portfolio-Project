@@ -1,7 +1,7 @@
 :root {
   --accent-color: #e4e4c0;
   --background-color: #1b1b1b;
-  --branding-color: #950025;
+  --branding-color: #a00229;
   --font-color: #e8e8e8;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Noto Sans", sans-serif;
@@ -39,6 +39,21 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: var(--primary-font);
+}
+
+footer {
+  margin: 20px 0;
+}
+
+footer .social-links a {
+  color: var(--branding-color);
+  font-size: 22px;
+  margin: 0 20px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--accent-color);
 }
 
 h2 {
@@ -103,13 +118,20 @@ nav ul {
   width: 150px;
 }
 
+.btn-branding:hover,
+.btn-launchButton:hover {
+  background: var(--background-color);
+  color: var(--font-color);
+  border-color: #e8e8e8;
+}
+
 .contact-links a {
   color: #e4e4c0;
   text-decoration: none;
 }
 
 .content-container {
-  padding: 100px 40px !important;
+  padding: 90px 40px !important;
 }
 
 .content {
@@ -118,7 +140,13 @@ nav ul {
 
 .content h1 {
   font-size: 64px;
-  letter-spacing: 4.4px;
+  font-weight: 600;
+  letter-spacing: 5.4px;
+}
+
+.content h5 {
+  font-family: var(--secondary-font);
+  font-size: 28px;
 }
 
 .content h3 {
