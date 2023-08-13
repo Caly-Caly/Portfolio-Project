@@ -34,6 +34,29 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
+nav a {
+  color: var(--font-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+nav li {
+  font-weight: 600;
+  display: inline;
+  list-style: none;
+  line-height: 55px;
+  margin-left: 18px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 
 .accent-color {
   color: var(--accent-color);
@@ -59,8 +82,13 @@ p {
   width: 150px;
 }
 
+.contact-links a {
+  color: #e4e4c0;
+  text-decoration: none;
+}
+
 .content-container {
-  padding: 150px 40px;
+  padding: 80px 40px;
 }
 
 .content {
@@ -123,6 +151,12 @@ p {
   font-style: italic;
   margin-bottom: 100px !important;
 }
+
+.logo {
+  margin-top: 5px;
+  max-height: 45px;
+}
+
 .project-titles {
   font-size: 36px;
   font-weight: 700;
@@ -131,9 +165,4 @@ p {
 
 .weather-pic {
   margin-left: 10px;
-}
-
-a {
-  color: #bfc0c0;
-  text-decoration: none;
 }
