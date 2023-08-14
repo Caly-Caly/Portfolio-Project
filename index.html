@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calysta Apontez</title>
+    <title>Calysta Aponte</title>
+    <meta
+      name="description"
+      content="Calysta is a front-end developer, based in New York. She is currently a student with SheCodes while managing a full time job as a retail manager. Calysta is here to show her her skills through the multiple projects that she has completed"
+    />
     <script
       src="https://kit.fontawesome.com/cff88eb2d0.js"
       crossorigin="anonymous"
@@ -30,12 +34,14 @@
   <body>
     <div class="container fixed-top">
       <nav class="d-flex justify-content-between">
-        <a href="/"><img src="src/logo.jpg" alt="" class="rounded-5 logo" /></a>
+        <a href="/" title="Homepage"
+          ><img src="src/logo.jpg" alt="Calysta's Logo" class="rounded-5 logo"
+        /></a>
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/aboutme.html">About</a></li>
-          <li><a href="/workpage.html">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li class="active"><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/aboutme.html" title="About Calysta">About</a></li>
+          <li><a href="/workpage.html" title="Calysta's Work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Calysta">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -47,7 +53,7 @@
         <i class="fa-solid fa-location-dot" style="color: #e4e4c0"></i> New York
       </h2>
       <div>
-        <a href="/aboutme.html" target="_blank" class="btn btn-branding"
+        <a href="/aboutme.html" target="_self" class="btn btn-branding"
           >Learn More
         </a>
       </div>
@@ -63,7 +69,7 @@
             src="src/weather-app.png"
             width="550"
             class="img-fluid rounded weather-pic"
-            title="Weather Application"
+            title="Weather Application Preview"
           />
         </div>
         <div class="col description-box">
@@ -82,7 +88,6 @@
           <a
             href="https://weather-app-calysta-4e0fb8.netlify.app"
             target="_blank"
-            title="Weather App"
             class="btn btn-launchButton"
             >Launch App</a
           >
@@ -103,7 +108,6 @@
           <a
             href="https://retrogaming-by-calystaaponte-9eec07.netlify.app"
             target="_blank"
-            title="Retro Consoles Website"
             class="btn btn-launchButton"
             >Launch App</a
           >
@@ -118,15 +122,26 @@
         </div>
       </div>
       <footer>
-        <div class="social-links mb-2 d-flex justify-content-center">
-          <a href="mailto:calystaaponte@gmail.com"
+        <div class="social-links d-flex justify-content-center">
+          <a href="mailto:calystaaponte@gmail.com" title="Email Calysta"
             ><i class="fa-regular fa-envelope"></i
           ></a>
-          <a href="https://github.com/caly-caly"
+          <a
+            href="https://github.com/caly-caly"
+            title="Github Profile"
+            target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+          <a href="http://" title="Instagram Profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
+        <p class="text-center">
+          This project was coded by Calysta Aponte, and it's
+          <a href="https://github.com/Caly-Caly/Portfolio-Project">
+            open-sourced.</a
+          >
+        </p>
       </footer>
     </div>
   </body>

@@ -36,13 +36,67 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background: radial-gradient(
+      at bottom right,
+      rgba(222, 221, 221, 0.11) 0,
+      rgba(222, 221, 221, 0.11) 8px,
+      rgba(222, 221, 221, 0.2) 8px,
+      rgba(222, 221, 221, 0.2) 16px,
+      rgba(222, 221, 221, 0.75) 16px,
+      rgba(222, 221, 221, 0.75) 24px,
+      rgba(222, 221, 221, 0.25) 24px,
+      rgba(222, 221, 221, 0.25) 32px,
+      rgba(222, 221, 221, 0.3) 32px,
+      rgba(222, 221, 221, 0.3) 40px,
+      rgba(222, 221, 221, 0.75) 40px,
+      rgba(222, 221, 221, 0.75) 48px,
+      rgba(222, 221, 221, 0.2) 48px,
+      rgba(222, 221, 221, 0.2) 56px,
+      transparent 56px,
+      transparent 64px
+    ),
+    radial-gradient(
+      at top left,
+      transparent 0,
+      transparent 8px,
+      rgba(222, 221, 221, 0.2) 8px,
+      rgba(222, 221, 221, 0.2) 16px,
+      rgba(222, 221, 221, 0.75) 16px,
+      rgba(222, 221, 221, 0.75) 24px,
+      rgba(222, 221, 221, 0.3) 24px,
+      rgba(222, 221, 221, 0.3) 32px,
+      rgba(222, 221, 221, 0.25) 32px,
+      rgba(222, 221, 221, 0.25) 40px,
+      rgba(222, 221, 221, 0.75) 40px,
+      rgba(222, 221, 221, 0.75) 48px,
+      rgba(222, 221, 221, 0.2) 48px,
+      rgba(222, 221, 221, 0.2) 56px,
+      rgba(222, 221, 221, 0.11) 56px,
+      rgba(222, 221, 221, 0.11) 64px,
+      transparent 64px,
+      transparent 160px
+    );
+  background-blend-mode: multiply;
+  background-size: 64px 64px, 64px 64px;
+  background-color: #1b1b1b;
+  /* background-color: var(--background-color); */
   color: var(--font-color);
   font-family: var(--primary-font);
 }
 
 footer {
   margin: 20px 0;
+}
+
+footer p {
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  margin: 0;
+}
+
+footer p a {
+  color: var(--branding-color);
+  text-decoration: none;
 }
 
 footer .social-links a {
@@ -52,7 +106,8 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 
-footer .social-links a:hover {
+footer .social-links a:hover,
+footer p a:hover {
   color: var(--accent-color);
 }
 
@@ -68,6 +123,7 @@ p {
 }
 nav {
   background-color: var(--background-color);
+  box-shadow: 8px 8px 8px #141414;
 }
 
 nav a {
@@ -87,6 +143,7 @@ nav li {
   list-style: none;
   line-height: 55px;
   margin-left: 18px;
+  padding: 0 6px;
 }
 
 nav ul {

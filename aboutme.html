@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Calysta is a front-end developer, based in New York. She is currently a student with SheCodes while managing a full time job as a retail manager. Calysta is here to show her her skills through the multiple projects that she has completed"
+    />
     <script
       src="https://kit.fontawesome.com/cff88eb2d0.js"
       crossorigin="anonymous"
@@ -28,21 +32,21 @@
     <title>About Me</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container fixed-top">
       <nav class="d-flex justify-content-between">
-        <a href="/"><img src="src/logo.jpg" alt="" class="rounded-5 logo" /></a>
+        <a href="/" title="Homepage"><img src="src/logo.jpg" alt="" class="rounded-5 logo" /></a>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li class="active"><a href="/aboutme.html">About</a></li>
-          <li><a href="/workpage.html">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li ><a href="/" title="Homepage">Home</a></li>
+          <li class="active"><a href="/aboutme.html" title="About Calysta">About</a></li>
+          <li><a href="/workpage.html" title="Calysta's Work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Calysta">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-6 d-none d-lg-block">
-          <img src="#" alt="" class="img-fluid" />
+          <img src="/index.html" alt="" class="img-fluid" />
         </div>
         <div class="col-lg-6">
           <div class="content">
@@ -56,7 +60,7 @@
               Need to add in a great opening paragraph detailing me, my
               interests, my work and my personality.
             </p>
-            <a href="/workpage.html" class="btn btn-branding"
+            <a href="/workpage.html" target="_self" class="btn btn-branding"
               >Check Out My Projects
             </a>
           </div>
@@ -65,13 +69,13 @@
     </div>
     <footer>
       <div class="social-links d-flex justify-content-center">
-        <a href="mailto:calystaaponte@gmail.com"
-          ><i class="fa-regular fa-envelope"></i
-        ></a>
-        <a href="https://github.com/caly-caly"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+       <a href="mailto:calystaaponte@gmail.com" title="Email Calysta"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="https://github.com/caly-caly" title="Github Profile" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="http://" title="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </footer>
   </body>
